@@ -57,7 +57,7 @@ jobs:
       - name: Install sonar-scanner and build-wrapper
         env:
           SONAR_HOST_URL: ${{secrets.SONAR_HOST_URL}}
-        uses: SonarSource/sonarqube-github-c-cpp@v1
+        uses: SonarSource/sonarqube-github-c-cpp@vp/supportLinux_ARM64
       - name: Run build-wrapper
         run: |
           mkdir build
